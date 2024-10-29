@@ -1,12 +1,12 @@
 import { ContainerProfile, Progress, ProgressBar } from "./style";
 
 // eslint-disable-next-line react/prop-types
-export const UserRanking = ({ progress }) => {
+export const UserRanking = ({ user, progress }) => {
   return (
     <ContainerProfile>
-      <img src="https://github.com/joao-ressel.png" alt="" />
+      <img src={`https://github.com/${user}.png`} alt="" />
       <div>
-        <span>João Carlos Ressel</span>
+        <span>{user}</span>
         <ProgressBar>
           <Progress progress={progress}></Progress>
         </ProgressBar>

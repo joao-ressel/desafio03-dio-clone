@@ -3,6 +3,8 @@ import { UserRanking } from "../../components/user-ranking";
 import { Container, ContainerLeft, ContainerRight } from "./style";
 
 export const Feed = () => {
+  const username = localStorage.getItem("username");
+
   return (
     <Container>
       <ContainerLeft>
@@ -12,10 +14,10 @@ export const Feed = () => {
       </ContainerLeft>
       <ContainerRight>
         <h2>#RANKING TOP 5 DA SEMANA</h2>
-        <UserRanking progress={90} />
-        <UserRanking progress={80} />
-        <UserRanking progress={60} />
-        <UserRanking progress={40} />
+        <UserRanking user={username} progress={90} />
+        <UserRanking user={username} progress={80} />
+        <UserRanking user={username} progress={60} />
+        <UserRanking user={username} progress={40} />
       </ContainerRight>
     </Container>
   );

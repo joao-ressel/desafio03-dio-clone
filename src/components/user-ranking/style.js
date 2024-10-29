@@ -10,6 +10,7 @@ export const ContainerProfile = styled.div`
   }
   img {
     width: 42px;
+    height: 42px;
     border: 3px solid #fff;
     border-radius: 100%;
   }

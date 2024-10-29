@@ -4,11 +4,13 @@ import { Login } from "./pages/login";
 import { Register } from "./pages/register";
 import { Feed } from "./pages/feed";
 import { GlobalStyle } from "./style";
+import { Header } from "./components/header";
 
 export const App = () => {
   return (
     <Router>
-      <GlobalStyle/>
+      <GlobalStyle />
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />

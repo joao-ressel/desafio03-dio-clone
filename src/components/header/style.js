@@ -1,45 +1,97 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-  width: 100%;
-  padding: 1rem 0;
   display: flex;
-
+  width: 100%;
+  height: 50px;
   background-color: #151515;
+`;
+
+export const Nav = styled.nav`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 4rem;
+  width: 100%;
+`;
+
+export const Logo = styled.img`
+  height: 25px;
+  width: auto;
+`;
+
+export const NavList = styled.ul`
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+`;
+
+export const NavItem = styled.li`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 120px;
+
+  list-style: none;
+  background-color: #565656;
+  border-radius: 50px;
+
+  &:hover {
+    background-color: #333;
+    cursor: pointer;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+`;
+
+export const SearchInput = styled.input`
+  padding: 0.3rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+`;
+
+export const NavPerfil = styled.li`
+  list-style: none;
+  text-align: center;
+
+  min-width: 120px;
+  border-radius: 50px;
 
   img {
-    height: 25px;
-    width: auto;
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+    border: 3px solid #fff;
   }
 
-  nav {
+  .list-drop {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
 
-    margin: 0 4rem;
-    width: 100%;
-  }
+    position: absolute;
+    padding: 0 2rem 0 0;
 
-  nav ul {
-    display: flex;
-    gap: 1rem;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 
-    li {
-      list-style: none;
-      min-width: 120px;
-      text-align: center;
-      background-color: #565656;
-      border-radius: 50px;
+    a {
+      text-decoration: none;
+      border-radius: 5px;
+      color: #000;
+
+      padding: 1rem;
+      width: 100%;
 
       &:hover {
-        background-color: #333;
-        cursor: pointer;
-      }
-
-      a {
+        background-color: #151515;
         color: #fff;
-        text-decoration: none;
       }
     }
   }

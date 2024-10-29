@@ -6,13 +6,12 @@ import Button from "../../components/button";
 import { Input } from "../../components/input";
 import { Container, ContainerLeft, ContainerRight, Form } from "./style";
 
-export const Login = () => {
+// eslint-disable-next-line react/prop-types
+export const Login = ({ onLogin }) => {
+  // Adicione onLogin como props
   const navigate = useNavigate();
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
-  // eslint-disable-next-line no-unused-vars
   const [error, setError] = useState("");
 
   const handleLogin = async (e) => {
@@ -36,10 +35,12 @@ export const Login = () => {
       localStorage.setItem("authToken", data.token);
       localStorage.setItem("username", data.username);
 
+      onLogin(data.token, { username: data.username });
+
       navigate("/feed");
     } catch (error) {
       console.error("Erro ao fazer login:", error);
-      alert(error.message);
+      setError(error.message);
     }
   };
 

@@ -34,37 +34,35 @@ export const ContainerRight = styled.div`
     font-weight: 700;
   }
 
-  .title-subtitle{
-            display: flex;
-            flex-direction: column;
-            gap: 0.4rem;
-        }
+  .title-subtitle {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
 
-  .links{
-        width: 300px;
-        display: flex;
-        justify-content: space-between;
-        
-        a{
-            text-decoration: none;
-            font-size: 0.8rem;
-            font-weight: 700;
-        }
-        .yellow-link{
-            color: #E5E044;
-        }
-        .green-link{
-            color: #23DD7A;
-        }
+  .links {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 700;
     }
+    .yellow-link {
+      color: #e5e044;
+    }
+    .green-link {
+      color: #23dd7a;
+    }
+  }
 `;
 
 export const Form = styled.form`
-    width: 300px;
-    height: 100%;
-    
-    display: flex;
-    flex-direction: column;
+  width: 300px;
+  height: 100%;
 
-   
+  display: flex;
+  flex-direction: column;
 `;

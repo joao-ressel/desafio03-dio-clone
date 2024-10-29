@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const InputWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -15,21 +14,21 @@ export const Icon = styled.span`
   justify-content: center;
   position: absolute;
   left: 10px;
-  color: #9B51E0;
+  color: #9b51e0;
 `;
 
 export const InputField = styled.input`
   background: none;
   border: none;
   border-bottom: 1px solid #333;
-  padding: 10px 10px 10px 40px; /* Espaço para o ícone */
+  padding: 10px 10px 10px 40px;
   color: #fff;
   font-size: 1rem;
   outline: none;
   width: 100%;
 
   &:focus {
-    border-bottom: 1px solid #9B51E0;
+    border-bottom: 1px solid #9b51e0;
   }
 
   &::placeholder {

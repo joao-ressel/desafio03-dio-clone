@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import { Container, ContainerLeft, ContainerRight, Form } from "./style";
-import { Input } from "../../components/input";
 import { FiLock, FiMail } from "react-icons/fi";
+
 import Button from "../../components/button";
+import { Input } from "../../components/input";
+import { Container, ContainerLeft, ContainerRight, Form } from "./style";
 
 export const Login = () => {
   return (

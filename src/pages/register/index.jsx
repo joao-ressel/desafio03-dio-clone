@@ -1,16 +1,17 @@
 import { Link } from "react-router-dom";
-import { Container, ContainerLeft, ContainerRight, Form } from "./style";
-import { Input } from "../../components/input";
 import { FiLock, FiMail, FiUser } from "react-icons/fi";
+
 import Button from "../../components/button";
+import { Input } from "../../components/input";
+import { Container, ContainerLeft, ContainerRight, Form } from "./style";
 
 export const Register = () => {
   return (
     <Container>
       <ContainerLeft>
         <h1>
-        A plataforma para você aprender com experts, dominar as principais tecnologias e entrar mais
-        rápido nas empresas mais desejadas.
+          A plataforma para você aprender com experts, dominar as principais tecnologias e entrar
+          mais rápido nas empresas mais desejadas.
         </h1>
       </ContainerLeft>
       <ContainerRight>
@@ -26,11 +27,10 @@ export const Register = () => {
         </Form>
 
         <div className="links">
-          <p>Ao clicar em "criar minha conta grátis", declaro que aceito as Políticas de Privacidade e os Termos de Uso da DIO.</p>
-          <p className="green-link">Já tenho conta.<Link  href="#">{" "}
-            Fazer login
-          </Link></p>
-          
+          <p>{`Ao clicar em "criar minha conta grátis", declaro que aceito as Políticas de Privacidade e os Termos de Uso da DIO.`}</p>
+          <p className="green-link">
+            Já tenho conta.<Link href="#"> Fazer login</Link>
+          </p>
         </div>
       </ContainerRight>
     </Container>

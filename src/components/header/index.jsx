@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import logoDIO from "../../assets/logo-dio.png";
+
 import { HeaderContainer } from "./style";
+import logoDIO from "../../assets/logo-dio.png";
 
 export const Header = () => {
   return (

@@ -1,5 +1,5 @@
-import imgHome from "../../assets/image-home.png";
 import Button from "../../components/button";
+import imgHome from "../../assets/image-home.png";
 import { Container, ContainerLeft } from "./style";
 
 export const Home = () => {

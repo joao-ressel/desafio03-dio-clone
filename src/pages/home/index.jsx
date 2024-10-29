@@ -1,4 +1,5 @@
 import imgHome from "../../assets/image-home.png";
+import Button from "../../components/button";
 import { Container, ContainerLeft } from "./style";
 
 export const Home = () => {
@@ -16,7 +17,7 @@ export const Home = () => {
             novo desafio profissional, evoluindo em comunidade com os melhores experts.
           </p>
         </div>
-        <button>Começar agora</button>
+        <Button>Começar agora</Button>
       </ContainerLeft>
       <img src={imgHome} alt="" />
     </Container>

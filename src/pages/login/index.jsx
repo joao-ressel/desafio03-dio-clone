@@ -15,7 +15,7 @@ export const Login = () => {
       </ContainerLeft>
       <ContainerRight>
         <div className="title-subtitle">
-          <h1>Faça seu cadastro</h1>
+          <h1>Faça seu login</h1>
           <p>Faça seu login e make the change._</p>
         </div>
         <Form action="">
